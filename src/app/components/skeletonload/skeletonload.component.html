@@ -1,0 +1,43 @@
+<div class="post-grid">
+  <mat-card *ngFor="let item of skeletonArray" class="post-card skeleton-card">
+    <mat-card-header>
+      <div class="post-header">
+        <div class="model-category">
+          <span class="skeleton-badge">
+            <div class="skeleton-circle"></div>
+            <div class="skeleton-text"></div>
+          </span>
+          <span class="skeleton-badge">
+            <div class="skeleton-circle"></div>
+            <div class="skeleton-text"></div>
+          </span>
+        </div>
+        <div class="skeleton-badge">
+          <div class="skeleton-circle"></div>
+          <div class="skeleton-text"></div>
+        </div>
+      </div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="skeleton-content">
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line" style="width: 75%"></div>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <div class="post-footer">
+        <div class="author-info skeleton-badge">
+          <div class="skeleton-circle"></div>
+          <div class="skeleton-text"></div>
+        </div>
+        <div class="vote-score">
+          <div class="skeleton-circle"></div>
+          <div class="skeleton-text" style="width: 20px"></div>
+        </div>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,82 @@
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.skeleton-card {
+  height: 100%;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.model-category {
+  display: flex;
+  gap: 8px;
+}
+
+.skeleton-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 16px;
+  background-color: #f0f0f0;
+}
+
+.skeleton-text {
+  height: 16px;
+  width: 60px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+.skeleton-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+.skeleton-line {
+  height: 16px;
+  margin: 8px 0;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+// Animation
+.skeleton-text,
+.skeleton-line,
+.skeleton-circle {
+  background: linear-gradient(
+    90deg,
+    rgba(224, 224, 224, 0.8) 0%,
+    rgba(224, 224, 224, 0.4) 50%,
+    rgba(224, 224, 224, 0.8) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

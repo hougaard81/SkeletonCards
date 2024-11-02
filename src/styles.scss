@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  /* Primary Colors - Ocean blue to forest green spectrum */
+  --primary: oklch(60% 0.2 230);        /* Darker electric blue */
+  --secondary: oklch(65% 0.18 170);     /* Darker cyan-green */
+  --tertiary: oklch(70% 0.15 145);      /* Darker emerald green */
+  --fourth: oklch(55% 0.15 120);        /* Much deeper teal */
+
+  /* Status/Ranking Colors - Natural metallic tones */
+  --gold: oklch(75% 0.18 85);           /* Darker gold */
+  --silver: oklch(75% 0.08 230);        /* Darker silver-blue */
+  --bronze: oklch(65% 0.12 45);         /* Darker bronze */
+
+  /* Surface Colors - Much more contrast */
+  --background: oklch(75% 0.02 190);    /* Less saturated, slightly darker background */
+  --surface: oklch(85% 0.01 190);        /* Significantly darker surface */
+  --surface-alt: oklch(80% 0.015 190);   /* Even darker alternate surface */
+  --background-rgb: 15, 15, 20;          /* RGB equivalent of background */
+
+  /* Interactive States */
+  --success: oklch(60% 0.2 145);        /* Darker success */
+  --warning: oklch(70% 0.15 85);        /* Darker warning */
+  --error: oklch(60% 0.2 25);           /* Darker error */
+
+  /* Text Colors - Much stronger contrast */
+  --text-primary: oklch(10% 0.01 190);   /* Almost black primary text */
+  --text-secondary: oklch(25% 0.01 190); /* Very dark secondary text */
+  --text-tertiary: oklch(40% 0.01 190);  /* Darker tertiary text */
+
+  /* Gradient Bases - Darker overall */
+  --gradient-start: oklch(60% 0.2 230);  /* Darker start */
+  --gradient-end: oklch(65% 0.18 145);   /* Darker end */
+  --gradient-alt: oklch(45% 0.2 230);   /* Darker alternate */
+
+  /* Logo color */
+  --logo-1: oklch(55% 0.2 230);         /* Darker electric blue */
+  --logo-2: oklch(65% 0.18 170);         /* Darker electric green */
+}
+
+/* Dark Mode Variables */
+:root.dark-mode {
+  /* Primary Colors - More luminous for dark mode */
+  --primary: oklch(65% 0.2 230);        /* Electric blue */
+  --secondary: oklch(70% 0.18 170);     /* Vibrant cyan-green */
+  --tertiary: oklch(75% 0.15 145);      /* Emerald green */
+  --fourth: oklch(97% 0.015 120);        /* Deep teal */
+
+
+  /* Status/Ranking Colors - More vibrant for dark mode */
+  --gold: oklch(80% 0.18 85);           /* Luminous gold */
+  --silver: oklch(75% 0.08 230);        /* Bright silver-blue */
+  --bronze: oklch(70% 0.12 45);         /* Glowing bronze */
+
+  /* Surface Colors - Deep ocean backgrounds */
+  --background: oklch(15% 0.03 190);    /* Deep ocean-black */
+  --surface: oklch(20% 0.035 190);      /* Rich ocean-black */
+  --surface-alt: oklch(25% 0.04 190);   /* Medium ocean-black */
+  --background-rgb: 15, 15, 20;
+
+  /* Interactive States - Brighter for dark mode */
+  --success: oklch(70% 0.2 145);        /* Forest green */
+  --warning: oklch(80% 0.15 85);        /* Bright amber */
+  --error: oklch(70% 0.2 25);           /* Rich coral */
+
+  /* Text Colors - Better dark mode contrast */
+  --text-primary: oklch(98% 0.02 190);  /* Bright ocean-white */
+  --text-secondary: oklch(90% 0.02 190);/* Light ocean-white */
+  --text-tertiary: oklch(80% 0.02 190); /* Medium ocean-white */
+
+  /* Dark Mode Gradient Bases */
+  --gradient-start: oklch(75% 0.2 230); /* Bright electric blue */
+  --gradient-end: oklch(70% 0.18 145);  /* Luminous emerald */
+  --gradient-alt: oklch(15% 0.04 190);  /* Medium ocean-black */
+
+  /* Logo color */
+  --logo-1: oklch(65% 0.2 230);         /* Darker electric blue */
+  --logo-2: oklch(70% 0.18 170);         /* Darker electric green */
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
