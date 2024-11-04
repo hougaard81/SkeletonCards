@@ -18,11 +18,13 @@ interface Post {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, 
+  imports: [
+    RouterOutlet, 
     CommonModule, 
     MatCardModule, 
     MatIconModule,
-    SkeletonloadComponent],
+    SkeletonloadComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
